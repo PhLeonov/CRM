@@ -11,7 +11,7 @@ const keys = require('./config/keys')
 const app = express()
 
 mongoose.connect(keys.mongoURI)
-  .then(() => console.log('MongoDB connected.'))
+  .then(() => console.log('MongoDB connected!'))
   .catch(error => console.log(error))
 
 app.use(passport.initialize())
